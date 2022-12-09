@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            main {
+                margin-left: 50px;
+            }
+
+            .title {
+                font-size: 2em;
+                margin-block-start: 0.67em;
+                margin-block-end: 0.67em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                font-weight: bold;
+            }
+
+            .flex {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                background-color: grey;
+            }
+
+            .flex li {
+                padding: 15px;
+            }
+
+            .flex a {
+                text-decoration: none;
+                color: white;
+                transition: all 0.5s linear;
+            }
+
+            .flex a:hover {
+                background-color: darkgrey;
+                letter-spacing: 4px;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .img-container {
+                width: 320px;
+                height: 320px;
+                overflow: hidden;
+            }
+
+            .img-container img:hover {
+                transform: scale(1.1);
+                transition: all 0.5s linear;
+            }
+
+            footer {
+                padding: 20px;
+                background-color: lightgrey;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="flex">
+                    <li><a href="#profile">프로필</a></li>
+                    <li><a href="#detail">상세 내용</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article id="profile">
+                <h1 class="title">산토끼토끼</h1>
+                <div class="img-container">
+                    <img src="img/profile.png" alt="" />
+                </div>
+            </article>
+            <article id="detail">
+                <div class="grid">
+                    <section>
+                        <h2>인적사항</h2>
+                        <div>
+                            <strong>생년월일: </strong>
+                            1996. 12. 25 | AB형
+                        </div>
+                        <div>
+                            <strong>주소: </strong>
+                            서울특별시 영등포구 선유로
+                        </div>
+                        <div>
+                            <strong>연락처: </strong>
+                            tokki@elice.io | 010.1234.5678
+                        </div>
+                    </section>
+                    <section>
+                        <h2>학력사항</h2>
+                        <ul>
+                            <li>2009.03 ~ 2012.02: 땡땡중학교 | 서울</li>
+                            <li>2012.03 ~ 2015.02: 땡땡고등학교 | 경기</li>
+                            <li>2015.03 ~ 2021.02: 땡땡대학교 | 부산</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="grid">
+                    <section>
+                        <h2>경력사항</h2>
+                        <ol>
+                            <li>한국 정보 올림피아드 대상</li>
+                            <li>대학생 봉사 동아리 회장</li>
+                            <li>엘리스 AI 트랙 수료</li>
+                        </ol>
+                    </section>
+                    <section>
+                        <h2>보유 스킬</h2>
+                        <ul>
+                            <li><a href="html.html">HTML</a></li>
+                            <li><a href="css.html">CSS</a></li>
+                            <li><a href="js.html">JavaScript</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <p>
+                Author by: 산토끼토끼
+                <br />
+                Copyright ⓒ 2016 - 2022 elice. All rights reserved.
+            </p>
+        </footer>
+    </body>
+</html>
